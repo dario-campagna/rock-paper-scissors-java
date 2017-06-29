@@ -1,5 +1,5 @@
 package it.esteco.rps;
 
 public enum Result {
-    PLAYER_WINS
+    OPPONENT_WINS, PLAYER_WINS
 }
