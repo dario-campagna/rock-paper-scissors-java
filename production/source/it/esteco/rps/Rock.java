@@ -1,9 +1,9 @@
 package it.esteco.rps;
 
-public class Rock implements Gesture {
+public class Rock implements Move {
     @Override
-    public Result versus(Gesture gesture) {
-        return gesture.challengedByRock();
+    public Result versus(Move move) {
+        return move.challengedByRock();
     }
 
     @Override
@@ -18,6 +18,6 @@ public class Rock implements Gesture {
 
     @Override
     public Result challengedByRock() {
-        return null;
+        return Result.DRAW;
     }
 }

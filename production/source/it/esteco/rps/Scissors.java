@@ -1,9 +1,9 @@
 package it.esteco.rps;
 
-public class Scissors implements Gesture {
+public class Scissors implements Move {
     @Override
-    public Result versus(Gesture gesture) {
-        return gesture.challengedByScissors();
+    public Result versus(Move move) {
+        return move.challengedByScissors();
     }
 
     @Override
