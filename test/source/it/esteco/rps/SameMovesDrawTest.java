@@ -16,4 +16,9 @@ public class SameMovesDrawTest {
     public void paperOverPaper() throws Exception {
         assertThat(new Game().play(new Paper(), new Paper()), equalTo(Result.DRAW));
     }
+
+    @Test
+    public void scissorsOverScissors() throws Exception {
+        assertThat(new Game().play(new Scissors(), new Scissors()), equalTo(Result.DRAW));
+    }
 }

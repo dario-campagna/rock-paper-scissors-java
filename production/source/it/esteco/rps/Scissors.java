@@ -8,7 +8,7 @@ public class Scissors implements Move {
 
     @Override
     public Result challengedByScissors() {
-        return null;
+        return Result.DRAW;
     }
 
     @Override
