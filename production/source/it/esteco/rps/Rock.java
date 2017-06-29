@@ -13,6 +13,6 @@ public class Rock implements Gesture {
 
     @Override
     public Result challengedByPaper() {
-        return null;
+        return Result.CHALLENGER_WINS;
     }
 }

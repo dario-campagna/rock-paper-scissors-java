@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 
-public class ScissorsBeatPaper {
+public class ScissorsBeatPaperTest {
 
     @Test
     public void scissorsWinOverPaper() throws Exception {
