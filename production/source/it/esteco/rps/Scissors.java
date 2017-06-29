@@ -15,4 +15,9 @@ public class Scissors implements Gesture {
     public Result challengedByPaper() {
         return Result.CHALLENGEE_WINS;
     }
+
+    @Override
+    public Result challengedByRock() {
+        return Result.CHALLENGER_WINS;
+    }
 }

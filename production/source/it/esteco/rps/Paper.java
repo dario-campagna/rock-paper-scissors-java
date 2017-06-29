@@ -15,4 +15,9 @@ public class Paper implements Gesture {
     public Result challengedByPaper() {
         return null;
     }
+
+    @Override
+    public Result challengedByRock() {
+        return Result.CHALLENGEE_WINS;
+    }
 }

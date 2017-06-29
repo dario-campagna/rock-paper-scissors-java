@@ -6,4 +6,6 @@ public interface Gesture {
     Result challengedByScissors();
 
     Result challengedByPaper();
+
+    Result challengedByRock();
 }

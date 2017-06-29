@@ -3,7 +3,7 @@ package it.esteco.rps;
 public class Rock implements Gesture {
     @Override
     public Result versus(Gesture gesture) {
-        return Result.CHALLENGER_WINS;
+        return gesture.challengedByRock();
     }
 
     @Override
@@ -14,5 +14,10 @@ public class Rock implements Gesture {
     @Override
     public Result challengedByPaper() {
         return Result.CHALLENGER_WINS;
+    }
+
+    @Override
+    public Result challengedByRock() {
+        return null;
     }
 }
