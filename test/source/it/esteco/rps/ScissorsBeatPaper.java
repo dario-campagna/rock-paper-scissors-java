@@ -11,4 +11,9 @@ public class ScissorsBeatPaper {
     public void scissorsWinOverPaper() throws Exception {
         assertThat(new Game().play(new Scissors(), new Paper()), equalTo(Result.CHALLENGER_WINS));
     }
+
+    @Test
+    public void paperLosesOverScissiors() throws Exception {
+        assertThat(new Game().play(new Paper(), new Scissors()), equalTo(Result.CHALLENGEE_WINS));
+    }
 }

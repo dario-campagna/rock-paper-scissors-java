@@ -8,6 +8,11 @@ public class Scissors implements Gesture {
 
     @Override
     public Result challengedByScissors() {
-            return null;
+        return null;
+    }
+
+    @Override
+    public Result challengedByPaper() {
+        return Result.CHALLENGEE_WINS;
     }
 }

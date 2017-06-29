@@ -10,4 +10,9 @@ public class Rock implements Gesture {
     public Result challengedByScissors() {
         return Result.CHALLENGEE_WINS;
     }
+
+    @Override
+    public Result challengedByPaper() {
+        return null;
+    }
 }

@@ -4,4 +4,6 @@ public interface Gesture {
     Result versus(Gesture gesture);
 
     Result challengedByScissors();
+
+    Result challengedByPaper();
 }
