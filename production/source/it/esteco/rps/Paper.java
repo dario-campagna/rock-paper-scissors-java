@@ -13,7 +13,7 @@ public class Paper implements Move {
 
     @Override
     public Result challengedByPaper() {
-        return null;
+        return Result.DRAW;
     }
 
     @Override
