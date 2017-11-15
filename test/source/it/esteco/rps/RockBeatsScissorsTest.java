@@ -10,11 +10,11 @@ public class RockBeatsScissorsTest {
 
     @Test
     public void rockBeatsScissors() throws Exception {
-        assertThat(new Game().play(Moves.ROCK, Moves.SCISSORS), is(equalTo(Result.CHALLENGEE_WINS)));
+        assertThat(new Game(Rocks.rules()).play(Move.ROCK, Move.SCISSORS), is(equalTo(Result.CHALLENGEE_WINS)));
     }
 
     @Test
     public void scissorsLoseOverRock() throws Exception {
-        assertThat(new Game().play(Moves.SCISSORS, Moves.ROCK), is(equalTo(Result.CHALLENGER_WINS)));
+        assertThat(new Game(Rocks.rules()).play(Move.SCISSORS, Move.ROCK), is(equalTo(Result.CHALLENGER_WINS)));
     }
 }
