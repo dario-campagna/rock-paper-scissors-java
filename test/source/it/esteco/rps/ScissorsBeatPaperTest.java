@@ -8,12 +8,12 @@ import static org.junit.Assert.assertThat;
 public class ScissorsBeatPaperTest {
 
     @Test
-    public void scissorsWinOverPaper() throws Exception {
+    public void scissorsWinAgainstPaper() throws Exception {
         assertThat(new Game().play(new Scissors(), new Paper()), equalTo(Result.CHALLENGER_WINS));
     }
 
     @Test
-    public void paperLosesOverScissiors() throws Exception {
+    public void paperLosesAgainstScissiors() throws Exception {
         assertThat(new Game().play(new Paper(), new Scissors()), equalTo(Result.CHALLENGEE_WINS));
     }
 }

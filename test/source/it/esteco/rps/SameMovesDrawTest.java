@@ -8,17 +8,17 @@ import static org.junit.Assert.assertThat;
 public class SameMovesDrawTest {
 
     @Test
-    public void rockOverRock() throws Exception {
+    public void rockAgainstRock() throws Exception {
         assertThat(new Game().play(new Rock(), new Rock()), equalTo(Result.DRAW));
     }
 
     @Test
-    public void paperOverPaper() throws Exception {
+    public void paperAgainstPaper() throws Exception {
         assertThat(new Game().play(new Paper(), new Paper()), equalTo(Result.DRAW));
     }
 
     @Test
-    public void scissorsOverScissors() throws Exception {
+    public void scissorsAgainstScissors() throws Exception {
         assertThat(new Game().play(new Scissors(), new Scissors()), equalTo(Result.DRAW));
     }
 }
