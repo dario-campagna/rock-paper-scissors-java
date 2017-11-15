@@ -18,4 +18,9 @@ public class RockRulesTest {
         assertThat(new Game(new RockRules()).play(Move.ROCK, Move.PAPER), is(equalTo(Result.CHALLENGER_WINS)));
     }
 
+    @Test
+    public void rockDraw() throws Exception {
+        assertThat(new Game(new RockRules()).play(Move.ROCK, Move.ROCK), is(equalTo(Result.DRAW)));
+    }
+
 }

@@ -18,4 +18,9 @@ public class PaperRulesTest {
         assertThat(new Game(new PaperRules()).play(Move.PAPER, Move.SCISSORS), is(equalTo(Result.CHALLENGER_WINS)));
     }
 
+    @Test
+    public void paperDraw() throws Exception {
+        assertThat(new Game(new PaperRules()).play(Move.PAPER, Move.PAPER), is(equalTo(Result.DRAW)));
+    }
+
 }

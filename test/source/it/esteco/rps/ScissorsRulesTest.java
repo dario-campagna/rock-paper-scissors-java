@@ -17,4 +17,9 @@ public class ScissorsRulesTest {
     public void scissorsLoseOverRock() throws Exception {
         assertThat(new Game(new ScissorsRules()).play(Move.SCISSORS, Move.ROCK), is(equalTo(Result.CHALLENGER_WINS)));
     }
+
+    @Test
+    public void scissorsDraw() throws Exception {
+        assertThat(new Game(new ScissorsRules()).play(Move.SCISSORS, Move.SCISSORS), is(equalTo(Result.DRAW)));
+    }
 }

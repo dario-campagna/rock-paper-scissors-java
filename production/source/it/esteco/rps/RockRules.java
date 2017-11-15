@@ -10,6 +10,7 @@ public class RockRules implements Rules {
         List<Rule> rules = new ArrayList<>();
         rules.add((challengeeMove, challengerMove) -> Move.ROCK.equals(challengeeMove) && Move.SCISSORS.equals(challengerMove) ? Result.CHALLENGEE_WINS : null);
         rules.add((challengeeMove, challengerMove) -> Move.ROCK.equals(challengeeMove) & Move.PAPER.equals(challengerMove) ? Result.CHALLENGER_WINS : null);
+        rules.add((challengeeMove, challengerMove) -> Move.ROCK.equals(challengeeMove) & Move.ROCK.equals(challengerMove) ? Result.DRAW : null);
         return rules;
     }
 }
