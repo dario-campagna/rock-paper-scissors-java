@@ -17,15 +17,15 @@ public class RockPaperScissors {
 
         public RockPaperScissorsRules() {
             rules = new ArrayList<>();
-            rules.add(new PaperScissorsRule());
-            rules.add(new PaperRockRule());
-            rules.add(new PaperDrawRule());
-            rules.add(new RockPaperRule());
-            rules.add(new RockScissorsRule());
-            rules.add(new RockDrawRule());
-            rules.add(new ScissorsPaperRule());
-            rules.add(new ScissorsRockRule());
-            rules.add(new ScissorsDrawRule());
+            rules.add(new PaperScissors());
+            rules.add(new PaperRock());
+            rules.add(new PaperDraw());
+            rules.add(new RockPaper());
+            rules.add(new RockScissors());
+            rules.add(new RockDraw());
+            rules.add(new ScissorsPaper());
+            rules.add(new ScissorsRock());
+            rules.add(new ScissorsDraw());
         }
 
         @Override
