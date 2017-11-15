@@ -19,7 +19,7 @@ public class ApplyRulesTest {
     @Test
     public void applyRules() throws Exception {
         Rule rule = mock(Rule.class);
-        when(rule.apply(any(),any())).thenReturn(Result.CHALLENGEE_WINS);
+        when(rule.apply(any(), any())).thenReturn(Result.CHALLENGEE_WINS);
         Rule inapplicableRule = mock(Rule.class);
         when(inapplicableRule.apply(any(), any())).thenReturn(null);
         Rules rules = mock(Rules.class);
