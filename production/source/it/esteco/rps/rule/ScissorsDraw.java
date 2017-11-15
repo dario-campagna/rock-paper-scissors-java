@@ -1,4 +1,4 @@
-package it.esteco.rps.rules;
+package it.esteco.rps.rule;
 
 import it.esteco.rps.Move;
 import it.esteco.rps.Result;

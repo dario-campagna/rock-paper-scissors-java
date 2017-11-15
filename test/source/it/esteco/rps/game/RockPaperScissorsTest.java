@@ -1,7 +1,7 @@
-package it.esteco.rps;
+package it.esteco.rps.game;
 
-import it.esteco.rps.game.Game;
-import it.esteco.rps.game.RockPaperScissors;
+import it.esteco.rps.Move;
+import it.esteco.rps.Result;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;

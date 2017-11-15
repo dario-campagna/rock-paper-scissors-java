@@ -1,8 +1,8 @@
-package it.esteco.rps;
+package it.esteco.rps.game;
 
-import it.esteco.rps.game.Game;
-import it.esteco.rps.rules.Rule;
-import it.esteco.rps.rules.Rules;
+import it.esteco.rps.Move;
+import it.esteco.rps.Result;
+import it.esteco.rps.rule.Rule;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -22,10 +22,8 @@ public class ApplyRulesTest {
         when(rule.apply(any(), any())).thenReturn(Result.CHALLENGEE_WINS);
         Rule inapplicableRule = mock(Rule.class);
         when(inapplicableRule.apply(any(), any())).thenReturn(null);
-        Rules rules = mock(Rules.class);
-        when(rules.rules()).thenReturn(Arrays.asList(inapplicableRule, rule));
 
-        Game game = new Game(rules);
+        Game game = new Game(Arrays.asList(inapplicableRule, rule));
 
         assertThat(game.play(Move.ROCK, Move.SCISSORS), is(equalTo(Result.CHALLENGEE_WINS)));
     }
