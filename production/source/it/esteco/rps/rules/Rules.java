@@ -1,4 +1,4 @@
-package it.esteco.rps;
+package it.esteco.rps.rules;
 
 import java.util.List;
 

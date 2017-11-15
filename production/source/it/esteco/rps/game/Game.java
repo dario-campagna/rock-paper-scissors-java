@@ -1,4 +1,9 @@
-package it.esteco.rps;
+package it.esteco.rps.game;
+
+import it.esteco.rps.Move;
+import it.esteco.rps.Result;
+import it.esteco.rps.rules.Rule;
+import it.esteco.rps.rules.Rules;
 
 public class Game {
 

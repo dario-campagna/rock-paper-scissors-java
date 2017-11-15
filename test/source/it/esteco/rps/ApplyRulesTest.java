@@ -1,5 +1,8 @@
 package it.esteco.rps;
 
+import it.esteco.rps.game.Game;
+import it.esteco.rps.rules.Rule;
+import it.esteco.rps.rules.Rules;
 import org.junit.Test;
 
 import java.util.Arrays;
