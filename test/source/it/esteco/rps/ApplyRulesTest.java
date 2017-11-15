@@ -1,7 +1,8 @@
-package it.esteco.rps.game;
+package it.esteco.rps;
 
 import it.esteco.rps.Move;
 import it.esteco.rps.Result;
+import it.esteco.rps.game.Game;
 import it.esteco.rps.rule.Rule;
 import org.junit.Test;
 
