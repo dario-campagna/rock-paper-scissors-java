@@ -21,7 +21,7 @@ public class RockPaperScissorsTest {
     }
 
     @Test
-    public void rockLosesOverPaper() throws Exception {
+    public void rockLosesAgainstPaper() throws Exception {
         assertThat(game.play(Move.ROCK, Move.PAPER), is(equalTo(Result.CHALLENGER_WINS)));
     }
 
@@ -36,7 +36,7 @@ public class RockPaperScissorsTest {
     }
 
     @Test
-    public void scissorsLosesOverRock() throws Exception {
+    public void scissorsLosesAgainstRock() throws Exception {
         assertThat(game.play(Move.SCISSORS, Move.ROCK), is(equalTo(Result.CHALLENGER_WINS)));
     }
 
@@ -46,7 +46,7 @@ public class RockPaperScissorsTest {
     }
 
     @Test
-    public void paperLosesOverScissors() throws Exception {
+    public void paperLosesAgainstScissors() throws Exception {
         assertThat(game.play(Move.PAPER, Move.SCISSORS), is(equalTo(Result.CHALLENGER_WINS)));
     }
 

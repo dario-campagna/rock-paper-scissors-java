@@ -24,12 +24,12 @@ public class RockPaperScissorsLizardSpockTest {
     }
 
     @Test
-    public void paperLosesOverLizard() throws Exception {
+    public void paperLosesAgainstLizard() throws Exception {
         assertThat(game.play(Move.PAPER, Move.LIZARD), is(equalTo(Result.CHALLENGER_WINS)));
     }
 
     @Test
-    public void lizardLosesOverScissors() throws Exception {
+    public void lizardLosesAgainstScissors() throws Exception {
         assertThat(game.play(Move.LIZARD, Move.SCISSORS), is(equalTo(Result.CHALLENGER_WINS)));
     }
 
@@ -39,7 +39,7 @@ public class RockPaperScissorsLizardSpockTest {
     }
 
     @Test
-    public void lizardLosesOverRock() throws Exception {
+    public void lizardLosesAgainstRock() throws Exception {
         assertThat(game.play(Move.LIZARD, Move.ROCK), is(equalTo(Result.CHALLENGER_WINS)));
     }
 
@@ -54,7 +54,7 @@ public class RockPaperScissorsLizardSpockTest {
     }
 
     @Test
-    public void spockLosesOverLizard() throws Exception {
+    public void spockLosesAgainstLizard() throws Exception {
         assertThat(game.play(Move.SPOCK, Move.LIZARD), is(equalTo(Result.CHALLENGER_WINS)));
     }
 
@@ -69,7 +69,7 @@ public class RockPaperScissorsLizardSpockTest {
     }
 
     @Test
-    public void rockLosesOverSpock() throws Exception {
+    public void rockLosesAgainstSpock() throws Exception {
         assertThat(game.play(Move.ROCK, Move.SPOCK), is(equalTo(Result.CHALLENGER_WINS)));
     }
 
@@ -79,12 +79,12 @@ public class RockPaperScissorsLizardSpockTest {
     }
 
     @Test
-    public void scissorsLosesOverSpock() throws Exception {
+    public void scissorsLosesAgainstSpock() throws Exception {
         assertThat(game.play(Move.SCISSORS, Move.SPOCK), is(equalTo(Result.CHALLENGER_WINS)));
     }
 
     @Test
-    public void spockLosesOverPaper() throws Exception {
+    public void spockLosesAgainstPaper() throws Exception {
         assertThat(game.play(Move.SPOCK, Move.PAPER), is(equalTo(Result.CHALLENGER_WINS)));
     }
 
@@ -99,7 +99,7 @@ public class RockPaperScissorsLizardSpockTest {
     }
 
     @Test
-    public void rockLosesOverPaper() throws Exception {
+    public void rockLosesAgainstPaper() throws Exception {
         assertThat(game.play(Move.ROCK, Move.PAPER), is(equalTo(Result.CHALLENGER_WINS)));
     }
 
@@ -114,7 +114,7 @@ public class RockPaperScissorsLizardSpockTest {
     }
 
     @Test
-    public void scissorsLosesOverRock() throws Exception {
+    public void scissorsLosesAgainstRock() throws Exception {
         assertThat(game.play(Move.SCISSORS, Move.ROCK), is(equalTo(Result.CHALLENGER_WINS)));
     }
 
@@ -124,7 +124,7 @@ public class RockPaperScissorsLizardSpockTest {
     }
 
     @Test
-    public void paperLosesOverScissors() throws Exception {
+    public void paperLosesAgainstScissors() throws Exception {
         assertThat(game.play(Move.PAPER, Move.SCISSORS), is(equalTo(Result.CHALLENGER_WINS)));
     }
 
