@@ -3,9 +3,9 @@ package it.esteco.rps;
 public interface Move {
     Result versus(Move move);
 
-    Result challengedByScissors();
+    Result challengesScissors();
 
-    Result challengedByPaper();
+    Result challengesPaper();
 
-    Result challengedByRock();
+    Result challengesRock();
 }

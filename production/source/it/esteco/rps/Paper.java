@@ -3,21 +3,21 @@ package it.esteco.rps;
 public class Paper implements Move {
     @Override
     public Result versus(Move move) {
-        return move.challengedByPaper();
+        return move.challengesPaper();
     }
 
     @Override
-    public Result challengedByScissors() {
-        return Result.CHALLENGER_WINS;
+    public Result challengesScissors() {
+        return Result.CHALLENGEE_WINS;
     }
 
     @Override
-    public Result challengedByPaper() {
+    public Result challengesPaper() {
         return Result.DRAW;
     }
 
     @Override
-    public Result challengedByRock() {
-        return Result.CHALLENGEE_WINS;
+    public Result challengesRock() {
+        return Result.CHALLENGER_WINS;
     }
 }
