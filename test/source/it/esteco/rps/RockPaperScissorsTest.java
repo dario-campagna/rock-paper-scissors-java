@@ -26,7 +26,7 @@ public class RockPaperScissorsTest {
     }
 
     @Test
-    public void PaperBeatsRock() throws Exception {
+    public void paperBeatsRock() throws Exception {
         assertThat(game.play(Move.PAPER, Move.ROCK), is(equalTo(Result.CHALLENGEE_WINS)));
     }
 
